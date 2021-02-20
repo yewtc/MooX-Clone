@@ -1,6 +1,8 @@
 Revision history for Perl extension MooX-Clone
 
 {{$NEXT}}
+    
+    - fix broken POD
 
 0.01 2021-02-20T22:36:31Z
 

@@ -33,16 +33,16 @@ MooX::Clone - Make Moo objects clone-able
 
 =head1 SYNOPSIS
 
-package Foo;
-use Moo;
-use MooX::Clone;
+    package Foo;
+    use Moo;
+    use MooX::Clone;
 
-has bar => ( is => 'rw' );
+    has bar => ( is => 'rw' );
 
-package main;
+    package main;
 
-my $foo = Foo->new( bar => 1 );
-my $bar = $foo->clone;          # deep copy of $foo
+    my $foo = Foo->new( bar => 1 );
+    my $bar = $foo->clone;          # deep copy of $foo
 
 =head1 DESCRIPTION
 
@@ -70,6 +70,7 @@ it under the same terms as Perl itself.
 =head1 AUTHORS
 
 Julien Fiegehenn E<lt>simbabque@cpan.orgE<gt>
+
 Mohammad S Anwar E<lt>mohammad.anwar@yahoo.comE<gt>
 
 =cut
