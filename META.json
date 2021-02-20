@@ -1,7 +1,7 @@
 {
    "abstract" : "Make Moo objects clone-able",
    "author" : [
-      "Julien Fiegehenn"
+      "Julien Fiegehenn <simbabque@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.1.11, CPAN::Meta::Converter version 2.150010",
@@ -67,9 +67,6 @@
    },
    "version" : "0.01",
    "x_authority" : "cpan:SIMBABQUE",
-   "x_contributors" : [
-      "Julien Fiegehenn <simbabque@cpan.org>"
-   ],
    "x_serialization_backend" : "JSON::PP version 2.97001",
    "x_static_install" : 1
 }

@@ -40,5 +40,5 @@ it under the same terms as Perl itself.
 
 # AUTHORS
 
-Julien Fiegehenn
-Mohammad S Anwar
+Julien Fiegehenn <simbabque@cpan.org>
+Mohammad S Anwar <mohammad.anwar@yahoo.com>
