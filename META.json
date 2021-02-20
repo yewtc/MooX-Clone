@@ -65,7 +65,7 @@
          "web" : "https://github.com/simbabque/MooX-Clone"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_authority" : "cpan:SIMBABQUE",
    "x_serialization_backend" : "JSON::PP version 2.97001",
    "x_static_install" : 1

@@ -4,16 +4,16 @@ MooX::Clone - Make Moo objects clone-able
 
 # SYNOPSIS
 
-package Foo;
-use Moo;
-use MooX::Clone;
+    package Foo;
+    use Moo;
+    use MooX::Clone;
 
-has bar => ( is => 'rw' );
+    has bar => ( is => 'rw' );
 
-package main;
+    package main;
 
-my $foo = Foo->new( bar => 1 );
-my $bar = $foo->clone;          # deep copy of $foo
+    my $foo = Foo->new( bar => 1 );
+    my $bar = $foo->clone;          # deep copy of $foo
 
 # DESCRIPTION
 
@@ -41,4 +41,5 @@ it under the same terms as Perl itself.
 # AUTHORS
 
 Julien Fiegehenn <simbabque@cpan.org>
+
 Mohammad S Anwar <mohammad.anwar@yahoo.com>
