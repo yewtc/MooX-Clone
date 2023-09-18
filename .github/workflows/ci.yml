@@ -15,9 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Cache ~/perl5
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           key: ${{ runner.os }}-dist-locallib
           path: ~/perl5
@@ -43,7 +43,7 @@ jobs:
       - name: Unpack distribution
         run: mkdir build && tar -xzf *.tar.gz -C build --strip-components=1
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: dist
           path: ./
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get dist artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: dist
       - name: Install dependencies
@@ -85,7 +85,7 @@ jobs:
           - { os: 'windows-latest', perl: '5.8' }
     steps:
       - name: Get dist artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: dist
       - name: Set up perl
